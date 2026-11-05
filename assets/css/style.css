@@ -1,0 +1,146 @@
+/* ==========================================
+   1. Root Variables & Main Reset
+========================================== */
+:root {
+    --primary-color: #4f46e5;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --radius: 10px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.page-header h1 {
+    color: var(--primary-color);
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    color: var(--text-muted);
+    font-size: 15px;
+}
+
+/* ==========================================
+   2. Base Card Style (Base CSS Requirement)
+========================================== */
+div[class^="a"] {
+    border: 1px dashed #94a3b8;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.assignment-header {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ==========================================
+   3. Selectors Solutions (Assignments 01 - 20)
+========================================== */
+
+/* Assignment 01 */
+.a01 .red { color: red; }
+.a01 #blue { color: blue; }
+
+/* Assignment 02 */
+.a02 h3, .a02 h4 { color: orange; }
+
+/* Assignment 03 */
+.a03 section span { color: green; font-weight: bold; }
+
+/* Assignment 04 */
+.a04 > p { color: purple; font-weight: bold; }
+
+/* Assignment 05 */
+.a05 h3 + p { color: red; font-weight: bold; }
+
+/* Assignment 06 */
+.a06 h3 ~ p { color: gray; font-style: italic; }
+
+/* Assignment 07 */
+.a07 a[title] { background-color: yellow; text-decoration: none; padding: 2px 5px; }
+
+/* Assignment 08 */
+.a08 input[type="email"] { border: 2px solid green; padding: 4px; }
+
+/* Assignment 09 */
+.a09 a[href^="https"] { color: green; font-weight: bold; }
+
+/* Assignment 10 */
+.a10 a[href$=".pdf"] { color: red; font-weight: bold; }
+
+/* Assignment 11 */
+.a11 li:first-child { font-weight: bold; color: green; }
+
+/* Assignment 12 */
+.a12 li:last-child { font-weight: bold; color: red; }
+
+/* Assignment 13 */
+.a13 li:nth-child(even) { background-color: #e0f2fe; }
+
+/* Assignment 14 */
+.a14 p:not(.skip) { color: purple; font-style: italic; }
+
+/* Assignment 15 */
+.a15 button {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    background-color: #f1f5f9;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.a15 button:hover { background-color: orange; color: white; }
+
+/* Assignment 16 */
+.a16 input { padding: 6px 10px; border: 1px solid #ccc; border-radius: 4px; }
+.a16 input:focus { outline: none; border: 2px solid indigo; }
+
+/* Assignment 17 */
+.a17 input[type="checkbox"]:checked + label { color: green; font-weight: bold; }
+
+/* Assignment 18 */
+.a18 p::before { content: "# "; color: purple; font-weight: bold; }
+
+/* Assignment 19 */
+.a19 p::first-letter { font-size: 30px; font-weight: bold; color: red; }
+
+/* Assignment 20 */
+.a20 input { padding: 6px 10px; border: 1px solid #ccc; border-radius: 4px; }
+.a20 input::placeholder { color: red; font-style: italic; }
